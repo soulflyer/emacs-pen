@@ -1,0 +1,31 @@
+(package-initialize)
+
+(defun load-config-file (f-name)
+  "Load the config file with name"
+  (let* ((config-dir "~/.emacs.d/config/"))
+    (load-file (concat config-dir f-name))))
+
+(add-to-list 'load-path "/usr/share/emacs/site-lisp/emacs-goodies-el/")
+(load-config-file "core.el")
+(load-config-file "packages.el")
+(load-config-file "bindings.el")
+(load-config-file "blackbored.el")
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (spinner clojure-mode elisp-slime-nav paradox counsel cider))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ediff-even-diff-A ((((class color) (background dark)) (:background "dark green"))))
+ '(ediff-even-diff-B ((((class color) (background dark)) (:background "dark red"))))
+ '(ediff-odd-diff-A ((((class color) (background dark)) (:background "dark green"))))
+ '(ediff-odd-diff-B ((((class color) (background dark)) (:background "dark red"))))
+ '(mumamo-background-chunk-major ((((class color) (background dark)) (:background "black"))))
+ '(mumamo-background-chunk-submode1 ((((class color) (background dark)) (:background "black")))))
