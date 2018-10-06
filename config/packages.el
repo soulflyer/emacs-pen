@@ -8,3 +8,5 @@
 (package-install 'clojure-mode)
 (package-install 'cider)
 (package-install 'spinner)
+(package-install 'counsel)
+(package-install 'paradox)
