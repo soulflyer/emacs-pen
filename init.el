@@ -12,4 +12,5 @@
 (load-config-file "packages.el")
 (load-config-file "bindings.el")
 (load-config-file "blackbored.el")
+(load-config-file "clojure.el")
 (load-config-file "core.el")
