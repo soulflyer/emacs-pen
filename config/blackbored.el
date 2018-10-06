@@ -147,3 +147,5 @@
  '(ediff-odd-diff-A ((((class color) (background dark)) (:background "dark green"))))
  '(ediff-odd-diff-B ((((class color) (background dark)) (:background "dark red"))))
  '(ediff-even-diff-B ((((class color) (background dark)) (:background "dark red")))))
+
+(color-theme-blackbored)
