@@ -11,3 +11,6 @@
 (package-install 'spinner)
 (package-install 'counsel)
 (package-install 'paradox)
+;; smex stores history for minibuffer command completion
+(package-install 'smex)
+(package-install 'rainbow-delimiters)
