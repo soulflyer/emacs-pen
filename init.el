@@ -7,3 +7,4 @@
 (load-config-file "core.el")
 (load-config-file "packages.el")
 (load-config-file "bindings.el")
+(load-config-file "blackbored.el")
