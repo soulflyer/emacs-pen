@@ -5,6 +5,7 @@
 
 (package-initialize)
 
+(package-install 'elisp-slime-nav)
 (package-install 'clojure-mode)
 (package-install 'cider)
 (package-install 'spinner)
