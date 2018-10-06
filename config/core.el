@@ -13,5 +13,10 @@
 (setq ls-lisp-use-insert-directory-program nil)
 (setq ls-lisp-verbosity '(uid))
 
-;;
+;; TODO Tidy up ibuffer display next
+(setq ibuffer-formats '((mark modified read-only git-status-mini " "
+                              (size 5 -1 :left :elide)
+                              (name))
+                        (mark filename)))
+
 (menu-bar-mode -1)
