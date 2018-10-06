@@ -5,8 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (rainbow-delimiters smex spinner clojure-mode paradox elisp-slime-nav counsel cider)))
- '(paradox-github-token t))
+    (spinner clojure-mode smex rainbow-delimiters paradox elisp-slime-nav counsel cider))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
