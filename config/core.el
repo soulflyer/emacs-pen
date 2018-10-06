@@ -8,6 +8,10 @@
 ;;Highlight the current line
 (global-hl-line-mode 1)
 
+;; Tidy up dired display
 (require 'ls-lisp)
 (setq ls-lisp-use-insert-directory-program nil)
 (setq ls-lisp-verbosity '(uid))
+
+;;
+(menu-bar-mode -1)
