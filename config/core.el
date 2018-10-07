@@ -14,7 +14,7 @@
 (setq ls-lisp-verbosity '(uid))
 
 ;; TODO Tidy up ibuffer display next
-(setq ibuffer-formats '((mark modified read-only git-status-mini " "
+(setq ibuffer-formats '((mark modified read-only " "
                               (size 5 -1 :left :elide)
                               (name))
                         (mark filename)))
