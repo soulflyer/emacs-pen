@@ -80,5 +80,10 @@
 (setq split-window-preferred-function 'split-window-sensibly)
 (setq pop-up-windows nil)
 
+;; ==========================
+;; Add the config for clojure
+;; ==========================
+(require 'iw-clojure)
+
 (provide 'init)
 ;;; init.el ends here
