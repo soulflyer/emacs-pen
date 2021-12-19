@@ -30,9 +30,10 @@
 (when (not (package-installed-p 'use-package))
   (package-install 'use-package))
 (require 'use-package)
+(require 'use-package-ensure)
 
 ;; paradox makes updating packages easier
-(package-install 'paradox)
+(require 'paradox)
 (paradox-enable)
 
 ;; ============================================================
@@ -44,9 +45,7 @@
 ;; =====================
 ;; Tidy up dired display
 ;; =====================
-(require 'ls-lisp)
-(setq ls-lisp-use-insert-directory-program nil)
-(setq ls-lisp-verbosity '(uid))
+(require 'iw-dired)
 
 ;; ======================
 ;; Tidy up buffer display
