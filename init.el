@@ -11,17 +11,17 @@
 (add-to-list 'load-path              "~/.emacs.d/config")
 
 ;; ======================================================================
-;; Specify a directory for themes and load one that has some nice colours
-;; ======================================================================
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-(load-theme  'blackbored)
-
-;; ======================================================================
 ;; custom-file tells emacs where to store any customizations made through
 ;; the 'customize' commands like M-x customize-group
 ;; ======================================================================
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (load custom-file)
+
+;; ======================================================================
+;; Specify a directory for themes and load one that has some nice colours
+;; ======================================================================
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+(load-theme  'blackbored)
 
 ;; =====================================================
 ;; Set up some stuff for adding extra packages to Emacs.
