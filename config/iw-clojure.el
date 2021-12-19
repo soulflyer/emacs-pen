@@ -5,7 +5,6 @@
 
 ;;; Code:
 (require 'use-package)
-(require 'cljstyle-mode)
 (use-package clojure-mode
   :ensure t
   :init
