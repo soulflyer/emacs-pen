@@ -1,7 +1,7 @@
 (require 'package)
 
 (add-to-list 'package-archives
-             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+             '("melpa" . "https://melpa.org/packages/") t)
 
 (package-initialize)
 
@@ -14,3 +14,6 @@
 ;; smex stores history for minibuffer command completion
 (package-install 'smex)
 (package-install 'rainbow-delimiters)
+
+(provide 'packages)
+;;; packages.el ends here
