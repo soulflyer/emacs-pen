@@ -27,9 +27,9 @@
 	 ("C-r"     . counsel-minibuffer-history)))
 
 ;; This causes CounselM-x to display the docstring as well as the command.
-(use-package ivy-rich
-  :ensure t
-  :config (ivy-rich-mode 1))
+;; (use-package ivy-rich
+;;   :ensure t
+;;   :config (ivy-rich-mode 1))
 
 ;; This makes delete in ido remove a path section rather than a character.
 (use-package flx-ido

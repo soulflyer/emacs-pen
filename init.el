@@ -17,12 +17,6 @@
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (load custom-file)
 
-;; ======================================================================
-;; Specify a directory for themes and load one that has some nice colours
-;; ======================================================================
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-(load-theme  'blackbored)
-
 ;; =====================================================
 ;; Set up some stuff for adding extra packages to Emacs.
 ;; =====================================================
@@ -41,6 +35,21 @@
 ;; paradox makes updating packages easier
 (require 'paradox)
 (paradox-enable)
+
+;; ======================================================================
+;; Specify a directory for themes and load one that has some nice colours
+;; ======================================================================
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+(load-theme  'blackbored)
+
+;; highlight the current line
+(global-hl-line-mode 1)
+
+;; colour parens so its easy to find the matching ones
+(use-package rainbow-delimiters
+  :ensure t
+  :init
+  (add-hook 'prog-mode-hook #'rainbow-delimiters-mode))
 
 ;; ============================================================
 ;; Use counsel and which-key to help find and remember commands
