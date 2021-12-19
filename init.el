@@ -62,7 +62,15 @@
                       (name))
                 (mark filename)))
 (global-set-key (kbd "C-x C-b") 'ibuffer)
+(global-set-key (kbd "M-~")     'switch-to-next-buffer)
+(global-set-key (kbd "M-`")     'switch-to-prev-buffer)
 
+;; ==================
+;; get rid of clutter
+;; ==================
+(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
+(if (fboundp 'tool-bar-mode)   (tool-bar-mode   -1))
+(if (fboundp 'menu-bar-mode)   (menu-bar-mode   -1))
 
 (provide 'init)
 ;;; init.el ends here
