@@ -24,9 +24,20 @@
 ;;Add melpa, there are lots of useful packages there.
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
+
+;; use-package lets us define commands to run when a package is loaded
+;; which makes it neater to set up the commands for a package.
+(require 'use-package)
+
 ;; paradox makes updating packages easier
 (package-install 'paradox)
 (paradox-enable)
+
+;; ============================================================
+;; Use counsel and which-key to help find and remember commands
+;; ============================================================
+(require 'iw-counsel)
+(require 'iw-which-key)
 
 ;; =====================
 ;; Tidy up dired display
@@ -45,12 +56,6 @@
                 (mark filename)))
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
-;; ============================================================
-;; Use counsel and which-key to help find and remember commands
-;; ============================================================
-(package-install 'counsel)
-(package-install 'which-key)
-(global-set-key (kbd "M-x") 'counsel-M-x)
 
 (provide 'init)
 ;;; init.el ends here
