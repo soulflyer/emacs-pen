@@ -27,6 +27,8 @@
 
 ;; use-package lets us define commands to run when a package is loaded
 ;; which makes it neater to set up the commands for a package.
+(when (not (package-installed-p 'use-package))
+  (package-install 'use-package))
 (require 'use-package)
 
 ;; paradox makes updating packages easier
