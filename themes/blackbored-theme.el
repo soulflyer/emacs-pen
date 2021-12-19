@@ -5,7 +5,7 @@
 (custom-theme-set-faces
  'blackbored
  '(default                                ((t (:background "Black" :foreground "white"))))
- '(mode-line                              ((t (:background "gray20" :foreground "#20d030"))))
+ '(mode-line                              ((t (:background "gray20" :foreground "#aa0060"))))
  '(mode-line-inactive                     ((t (:background "gray10" :foreground "gray30"))))
  '(vertical-border                        ((t (:foreground "#20d030"))))
  '(hl-line                                ((t (:background "#151515"))))

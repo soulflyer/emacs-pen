@@ -71,6 +71,14 @@
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 (if (fboundp 'tool-bar-mode)   (tool-bar-mode   -1))
 (if (fboundp 'menu-bar-mode)   (menu-bar-mode   -1))
+;; keybinding to bring back the menu if necessary
+(global-set-key (kbd "M-m") 'menu-bar-mode)
+
+;; =============================================
+;; This is to help stop emacs splitting windows.
+;; =============================================
+(setq split-window-preferred-function 'split-window-sensibly)
+(setq pop-up-windows nil)
 
 (provide 'init)
 ;;; init.el ends here
