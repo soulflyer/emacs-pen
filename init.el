@@ -89,6 +89,11 @@
 (setq split-window-preferred-function 'split-window-sensibly)
 (setq pop-up-windows nil)
 
+;;=======================================
+;; Add some config for editing emacs-lisp
+;;=======================================
+(require 'iw-lisp)
+
 ;; ==========================
 ;; Add the config for clojure
 ;; ==========================
