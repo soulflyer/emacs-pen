@@ -4,3 +4,6 @@ auto-save-list
 recentf
 custom.el
 smex-items
+ido.last
+ac-comphist.dat
+transient

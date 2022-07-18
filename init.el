@@ -99,5 +99,12 @@
 ;; ==========================
 (require 'iw-clojure)
 
+;; =========================================================
+;; Add undo tree
+;; TODO Check that the keybindings behave properly on Ubuntu
+;; Mac OS thinks C-/ is C-_ Ubuntu may have other ideas
+;; =========================================================
+(require 'iw-undo-tree)
+
 (provide 'init)
 ;;; init.el ends here
